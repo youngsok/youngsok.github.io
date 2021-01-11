@@ -18,8 +18,8 @@
         color: DeepSkyBlue;
         text-decoration: underline;
       }
-
-      .label {
+      
+      span.label {
         display: inline-block;
         vertical-align: middle;
         font-size: 80%;
@@ -31,17 +31,16 @@
         border-radius: .25em;
         padding: 5px 3px 2px;
       }
-      
-      .label-arch { background-color: #4CAF50; }
-      .label-sys { background-color: #2196F3; }
-      .label-sec { background-color: #F44336; }
-      .label-ai { background-color: #FF9800; }
-      .label-neuro { background-color: #008080; }
-      .label-gpu { background-color: #808000; }
-      .label-fpga { background-color: #581845; }
-      .label-modeling { background-color: #708090; }
+      span.label-arch { background-color: #4CAF50; }
+      span.label-sys { background-color: #2196F3; }
+      span.label-sec { background-color: #F44336; }
+      span.label-ai { background-color: #FF9800; }
+      span.label-neuro { background-color: #008080; }
+      span.label-gpu { background-color: #191970; }
+      span.label-fpga { background-color: #B8860B; }
+      span.label-modeling { background-color: #708090; }
+      span.label-mobile { background-color: #BA55D3; }
     </style>
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
  </head>
   <body>
@@ -121,84 +120,98 @@
         <b>Thread-aware Area-efficient High-level Synthesis Compiler for Embedded Devices</b><br />
         Changsu Kim, Shinnung Jeong, Sungjun Cho, Yongwoo Lee, William Song, <u>Youngsok Kim</u>, and Hanjun Kim<br />
         <i>19th ACM/IEEE International Symposium on Code Generation and Optimization (<b>CGO</b>)</i>, Feb.-Mar. 2021 (to appear)<br />
+        <span class="label label-modeling">Modeling</span> <span class="label label-fpga">FPGA</span>
       </li>
       <br>
       <li>
         <b>Real-Time Object Detection System with Multi-Path Neural Networks</b><br />
         Seonyeong Heo, Sungjun Cho, <u>Youngsok Kim</u>, and Hanjun Kim<br />
         <i>26th IEEE Real-Time and Embedded Technology and Applications Symposium (<b>RTAS</b>)</i>, Apr. 2020<br />
+        <span class="label label-modeling">Modeling</span> <span class="label label-gpu">GPU</span> <span class="label label-ai">AI</span>
       </li>
       <br>
       <li>
         <b>FlexLearn: Fast and Highly Efficient Brain Simulations Using Flexible On-Chip Learning</b><br />
         Eunjin Baek, Hunjun Lee, <u>Youngsok Kim</u>, and Jangwoo Kim<br />
         <i>52nd IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Oct. 2019<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-neuro">Neuromorphic</span>
       </li>
       <br>
       <li>
         <b>&mu;Layer: Low Latency On-Device Inference Using Cooperative Single-Layer Acceleration and Processor-Friendly Quantization</b><br />
         <u>Youngsok Kim</u>, Joonsung Kim, Dongju Chae, Daehyun Kim, and Jangwoo Kim<br />
         <i>14th ACM European Conference on Computer Systems (<b>EuroSys</b>)</i>, Mar. 2019<br />
+        <span class="label label-sys">System SW</span> <span class="label label-mobile">Mobile</span> <span class="label label-ai">AI</span>
       </li>
       <br />
       <li>
         <b>Flexon: A Flexible Digital Neuron for Efficient Spiking Neural Network Simulations</b><br />
         Dayeol Lee, Gwangmu Lee, Dongup Kwon, Sunghwa Lee, <u>Youngsok Kim</u>, and Jangwoo Kim<br />
         <i>45th ACM/IEEE International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June 2018<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-neuro">Neuromorphic</span>
       </li>
       <br />
       <li>
         <b>DCS-ctrl: A Fast and Flexible Device-Control Mechanism for Device-Centric Server Architecture</b><br />
         Dongup Kwon, Jaehyung Ahn, Dongju Chae, Mohammadamin Ajdari, Jaewon Lee, Suheon Bae, <u>Youngsok Kim</u>, and Jangwoo Kim<br />
         <i>45th ACM/IEEE International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June 2018<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-fpga">FPGA</span>
       </li>
       <br>
       <li>
         <b>Google Workloads for Consumer Devices: Mitigating Data Movement Bottlenecks</b><br />
         Amirali Boroumand, Saugata Ghose, <u>Youngsok Kim</u>, Rachata Ausavarungnirun, Eric Shiu, Rahul Thakur, Daehyun Kim, Aki Kuusela, Allan Knies, Parthasarathy Ranganathan, and Onur Mutlu<br />
         <i>23rd ACM International Conference on Architectural Support for Programming Languages and Operating Systems (<b>ASPLOS</b>)</i>, Mar. 2018<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-mobile">Mobile</span>
       </li>
       <br />
       <li>
         <b>GPUpd: A Fast and Scalable Multi-GPU Architecture Using Cooperative Projection and Distribution</b><br />
         <u>Youngsok Kim</u>, Jae-Eon Jo, Hanhwi Jang, Minsoo Rhu, Hanjun Kim, and Jangwoo Kim<br />
         <i>50th IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Oct. 2017<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-gpu">GPU</span>
       </li>
       <br>
       <li>
         <b>CloudSwap: A Cloud-Assisted Swap Mechanism for Mobile Devices</b><br />
         Dongju Chae, Joonsung Kim, <u>Youngsok Kim</u>, Jangwoo Kim, Kyung-Ah Chang, Sang-Bum Suh, and Hyogun Lee<br />
         <i>16th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (<b>CCGrid</b>)</i>, May 2016<br />
+        <span class="label label-sys">System SW</span> <span class="label label-mobile">Mobile</span>
       </li>
       <br />
       <li>
         <b>Efficient Footprint Caching for Tagless DRAM Caches</b><br />
         Hakbeom Jang, Yongjun Lee, Jongwon Kim, <u>Youngsok Kim</u>, Jangwoo Kim, Jinkyu Jeong, and Jae W. Lee<br />
         <i>22nd IEEE International Symposium on High Performance Computer Architecture (<b>HPCA</b>)</i>, Mar. 2016<br />
+        <span class="label label-arch">Architecture</span>
       </li>
       <br />
       <li>
         <b>DCS: A Fast and Scalable Device-Centric Server Architecture</b><br />
         Jaehyung Ahn, Dongup Kwon, <u>Youngsok Kim</u>, Mohammadamin Ajdari, Jaewon Lee, and Jangwoo Kim<br />
         <i>48th IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Dec. 2015<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-fpga">FPGA</span>
       </li>
       <br />
       <li>
         <b>Stealing Webpages Rendered on Your Browser by Exploiting GPU Vulnerabilities</b><br />
         Sangho Lee, <u>Youngsok Kim</u>, Jangwoo Kim, and Jong Kim<br />
         <i>35th IEEE Symposium on Security and Privacy (<b>S&amp;P</b>)</i>, May 2014<br />
+        <span class="label label-sec">Security</span> <span class="label label-gpu">GPU</span>
       </li>
       <br />
       <li>
         <b>GPUdmm: A High-Performance and Memory-Oblivious GPU Architecture Using Dynamic Memory Management</b><br />
         <u>Youngsok Kim</u>, Jaewon Lee, Jae-Eon Jo, and Jangwoo Kim<br />
         <i>20th IEEE International Symposium on High Performance Computer Architecture (<b>HPCA</b>)</i>, Feb. 2014<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-gpu">GPU</span>
       </li>
       <br />
       <li>
         <b>ScaleGPU: GPU Architecture for Memory-Unaware GPU Programming</b><br />
         <u>Youngsok Kim</u>, Jaewon Lee, Donggyu Kim, and Jangwoo Kim<br />
         <i>IEEE Computer Architecture Letters (<b>CAL</b>)</i>, 13(2):101-104, July-Dec. 2014<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-gpu">GPU</span>
       </li>
     </ul>
     <hr>
