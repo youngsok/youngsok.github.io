@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Youngsok Kim @ Yonsei Univ.</title>
+    <style>
+      @import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+      * { font-family: 'Nanum Barun Gothic', sans-serif; }
+
+      h1 { font-size: 16pt; }
+      h2 { font-size: 14pt; }
+
+      a:link, a:visited {
+        color: DarkBlue;
+        text-decoration: none;
+      }
+      a:hover {
+        color: DeepSkyBlue;
+        text-decoration: underline;
+      }
+      
+      span.label {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 80%;
+        font-weight: bold;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: .25em;
+        padding: 5px 3px 2px;
+      }
+      span.label-arch { background-color: #4CAF50; }
+      span.label-sys { background-color: #2196F3; }
+      span.label-sec { background-color: #F44336; }
+      span.label-ai { background-color: #FF9800; }
+      span.label-neuro { background-color: #008080; }
+      span.label-gpu { background-color: #191970; }
+      span.label-fpga { background-color: #B8860B; }
+      span.label-modeling { background-color: #708090; }
+      span.label-mobile { background-color: #BA55D3; }
+      span.label-database { background-color: #008080; }
+      span.label-pim { background-color: #FF6700; }
+      span.label-smartssd { background-color: #5B2C6F; }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ </head>
+  <body>
+    <table>
+      <tr>
+        <td align="middle">
+          <img src="images/photo3.jpg" width=112><br />
+          <img src="images/yonsei.jpg" width=112>
+        </td>
+        <td valign="top" style="padding-left: 1em;">
+          <h1>Youngsok Kim (김영석)</h1>
+          Associate Professor<br />
+          <a href="https://cs.yonsei.ac.kr/">Department of Computer Science and Engineering</a><br />
+          <!--<a href="https://cais.yonsei.ac.kr/">School of Computing</a><br />-->
+          <!--<a href="https://computing.yonsei.ac.kr/">College of Computing</a><br />-->
+          <a href="https://yonsei.ac.kr">Yonsei University</a><br />
+          <br />
+          <b>Lab</b>: <a href="https://hpcp.yonsei.ac.kr">High Performance Computing Platforms (HPCP) Lab</a><br />
+          <b>Email</b>: youngsok@yonsei.ac.kr<br />
+          <b>Office</b>: D703, Engineering Hall #4<br />
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <h2>Biography</h2>
+    <p>
+      I am an Associate Professor of <a href="https://cs.yonsei.ac.kr/">Computer Science and Engineering</a> at <a href="https://yonsei.ac.kr">Yonsei University</a>.
+      I am currently on a sabbatical as a Visiting Researcher at <a href="https://mangoboost.io">MangoBoost</a>.
+    </p>
+    <p>
+      Before joining Yonsei University, I was a post-doc researcher at <a href="http://www.snu.ac.kr">Seoul National University</a>.
+      I earned my PhD and BSc in <a href="http://cse.postech.ac.kr">Computer Science and Engineering</a> from <a href="http://www.postech.ac.kr">POSTECH</a> under the supervision of <a href="http://hpcs.snu.ac.kr/~jangwoo">Prof. Jangwoo Kim</a>.
+      During my PhD studies, I worked as an intern at Google Mountain View office and Samsung Electronics.
+    </p>
+    <p>
+      <b>To prospective students:</b>
+      I am looking for motivated MS and PhD applicants interested in computer architecture and system software research.
+      Please visit <a href="http://hpcp.yonsei.ac.kr">the website for my lab</a> to see what research topics I am actively pursuing.
+    </p>
+    <hr>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Computer architecture, system software, and hardware acceleration</li>
+      <li>GPU microarchitecture &amp; performance analysis/modeling</li>
+      <li>Hardware-accelerated database management systems</li>
+      <li>On-device machine learning on mobile/embedded devices</li>
+    </ul>
+    <hr>
+    <h2>Current Students</h2>
+    <!--<b>Graduate Students</b>-->
+    <ul>
+      <!--<li>Jinwoo Choi<small> (PhD Candidate / BSc in CSE, Yonsei Univ.)</small></li>-->
+      <!--<li>Jounghoo Lee<small> (PhD Candidate / BSc in EE, Yonsei Univ.)</small></li>-->
+      <li>Chaemin Lim<small> (PhD Student / MSc in AI, Yonsei Univ. / BA in Journalism &amp; BEng in CE, HUFS)</small></li>
+      <li>Yeonan Ha<small> (PhD Student / BSc in CSE, Yonsei Univ.)</small></li>
+      <li>Suhyun Lee<small> (PhD Student / BSc in CSE, Yonsei Univ.)</small></li>
+      <li>Hanna Cha<small> (PhD Student / MSc in AI, Yonsei Univ. / BSc in EE, Kobe Univ.)</small></li>
+      <!--<li>Seil Lee<small> (MSc Student / BSc in EE, Yonsei Univ.)</small></li>-->
+      <li>Sungchul Lee<small> (PhD Student / BSc in EE, Yonsei Univ.)</small></li>
+      <li>Jaeyoun Kim<small> (PhD Student / BSc in Atmos. Sci. &amp; BSc in EE, Yonsei Univ.)</small></li>
+      <li>Jiho Park<small> (MSc Student / BSc in CSE, Yonsei Univ.)</small></li>
+    </ul>
+    <!--<b>Undergraduate Interns</b>-->
+    <hr>
+    <h2>Teaching</h2>
+    <b>Undergraduate</b>
+    <ul>
+      <li>CCO2101: Discrete Mathematics<small> (2024F, 2023F, 2022F, 2021F)</small></li>
+      <li>CAS3102: Architecture of Computers<small> (2025S, 2024S, 2023S, 2022S, 2021S, 2020S)</small></li>
+      <li>CSI3103: Programming Language Structures<small> (2019F)</small></li>
+      <li>CSI4101: Software Capstone Design<small> (2022S)</small></li>
+      <li>CSI4104: Compiler Design<small> (2020F)</small></li>
+    </ul>
+    <b>Graduate</b>
+    <ul>
+      <li>AAI5004: AI Accelerators<small> (2024S, 2020F)</small></li>
+      <li>CSI6205: Processor Microarchitecture<small> (2023S, 2022S, 2020S)</small></li>
+      <li>CSI6206: Processor Performance Evaluation and Modeling<small> (2025S, 2022F)</small></li>
+      <li>CSI7200: Topics in Systems for Artificial Intelligence<small> (2024F)</small></li>
+      <li>CSI8734: Topics in Computer Architecture<small> (2023F)</small></li>
+      <li>ICD6004: Recent Advances in AI Systems<small> (2025S)</small></li>
+    </ul>
+    <hr>
+    <h2>Academic Service</h2>
+    <b>Program Committee</b>
+    <ul>
+      <li>2027:
+        <a href="https://2027.sigmod.org/">SIGMOD</a><small> (PC)</small></li>
+      <li>2026:
+        <a href="https://iscaconf.org/isca2026/">ISCA</a><small> (Lightweight PC)</small>,
+        <a href="https://hpca-conf.org/2026/">HPCA</a><small> (PC)</small>,
+        <a href="https://2026.sigmod.org/">SIGMOD</a><small> (PC, Round 3&plus;4)</small>,
+        <a href="https://www.ipdps.org/">IPDPS</a><small> (PC)</small>,
+        <a href="https://dipsa-qub.github.io/ICS2026-webpage/">ICS</a><small> (PC)</small>,
+        <a href="https://ispass.org/ispass2026/">ISPASS</a><small> (PC)</small></li>
+      <li>2025:
+        <a href="https://microarch.org/micro58/">MICRO</a><small> (PC)</small>,
+        <a href="https://hpcrl.github.io/ICS2025-webpage/">ICS</a><small> (PC)</small>,
+        <a href="https://ispass.org/ispass2025/">ISPASS</a><small> (PC)</small>,
+        <a href="https://ieeemass2025.github.io/ieeemass2025/">MASS</a><small> (PC)</small></li>
+      <li>2024:
+        <a href="https://microarch.org/micro57/">MICRO</a><small> (ERC)</small>,
+        <a href="https://www.hpca-conf.org/2024/">HPCA</a><small> (Light PC)</small>,
+        <a href="https://ics2024.github.io/">ICS</a><small> (PC)</small>,
+        <a href="https://ispass.org/ispass2024/">ISPASS</a><small> (PC)</small>,
+        <a href="https://middleware-conf.github.io/2024/">Middleware</a><small> (PC)</small>,
+        <a href="https://sites.google.com/view/ieee-mass-2024">MASS</a><small> (PC)</small></li>
+      <li>2023:
+        <a href="https://iscaconf.org/isca2023/">ISCA</a><small> (ERC)</small>,
+        <a href="http://www.ipdps.org/ipdps2023/index.html">IPDPS</a><small> (PC)</small>,
+        <a href="https://ispass.org/ispass2023/">ISPASS</a><small> (PC)</small>,
+        <a href="https://iiswc.org/iiswc2023/">IISWC</a><small> (PC)</small>,
+        <a href="https://cis.temple.edu/ieeemass2023/index.html">MASS</a><small> (PC)</small>,
+        <a href="https://sarchlab.github.io/cams2023/">CAMS</a><small> (PC)</small></li>
+      <li>2022:
+        <a href="https://www.microarch.org/micro55/">MICRO</a><small> (ERC)</small>,
+        <a href="https://ispass.org/ispass2022/">ISPASS</a><small> (PC)</small>,
+        <a href="https://sites.google.com/view/ieee-mass-2022">MASS</a><small> (PC)</small></li>
+      <li>2021:
+        <a href="https://hpca-conf.org/2021/">HPCA</a><small> (ERC)</small></li>
+      <li>2020:
+        <a href="https://www.microarch.org/micro53/">MICRO</a><small> (External Reviewer)</small></li>
+    </ul>
+    <b>Organizing Committee</b>
+    <ul>
+      <li>2025: <a href="https://www.microarch.org/micro58/">MICRO</a><small> (SRC Co-chair)</small>, <a href="https://pldi25.sigplan.org/home/LCTES-2025">LCTES</a><small> (Web Chair)</small></li>
+      <li>2022: <a href="https://hpca-conf.org/2022/">HPCA</a><small> (Web Chair)</small>, <a href="https://pldi22.sigplan.org/track/LCTES-2022">LCTES</a><small> (Web Chair)</small></li>
+      <li>2021: <a href="https://hpca-conf.org/2021/">HPCA</a><small> (Web Chair)</small></li>
+      <li>2018: <a href="https://iscaconf.org/isca2018/">ISCA</a><small> (Website Co-chair)</small></li>
+    </ul>
+    <!--
+    <b>Journal Reviewer</b>
+    <ul>
+      <li><a href="https://dl.acm.org/journal/taco">ACM TACO</a> 2022, 2021, 2020</li>
+      <li><a href="https://dl.acm.org/journal/tecs">ACM TECS</a> 2022, 2021</li>
+      <li><a href="https://www.computer.org/csdl/journal/ca">IEEE CAL</a> 2021, 2019</li>
+      <li><a href="https://www.computer.org/csdl/magazine/mi">IEEE Micro</a> 2023, 2022, 2020</li>
+      <li><a href="https://www.computer.org/csdl/journal/tc">IEEE TC</a> 2023, 2022</li>
+      <li><a href="https://ieee-ceda.org/publication/ieee-transactions-computer-aided-design-integrated-circuits-systems-tcad">IEEE TCAD</a> 2023</li>
+      <li><a href="https://www.computer.org/csdl/journal/tm">IEEE TMC</a> 2022, 2020</li>
+    </ul>
+    -->
+    <hr>
+    <h2>Selected Publications</h2>
+    <p style="font-size:80%">1 denotes co-first authors.<br>* indicates (co-)correspondence.</p>
+    <ol>
+      <li>
+    	<b>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</b><br>
+    	Chaemin Lim, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+    	<i>42nd IEEE International Conference on Data Engineering (<b>ICDE</b>)</i>, May 2026 (to appear)<br>
+    	<span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+    	<span class="label label-database">Database</span>
+      </li>
+      <br>
+      <li>
+        <b>SMTcheck: Accurate SMT Interference Prediction to Improve Scheduling Efficiency in Datacenters</b><br>
+        Sanghyun Kim<sup style="font-size:70%">1</sup>, Jinhyeok Oh<sup style="font-size:70%">1</sup>, Taehun Kim, Gyutae Kim, <u>Youngsok Kim</u>, Jaehyun Hwang, and Joonsung Kim<br>
+        <i>32nd IEEE International Symposium on High-Performance Computer Architecture (<b>HPCA</b>)</i>, Jan.&ndash;Feb. 2026 (to appear)<br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-modeling">Modeling</span>
+      </li>
+      <br>
+      <li>
+        <b>LoCaLUT: Harnessing Capacity-Computation Tradeoffs for LUT-Based Inference in DRAM-PIM</b><br>
+        Junguk Hong, Changmin Shin, Sukjin Kim, Si Ung Noh, Taehee Kwon, Seongyeon Park, Hanjun Kim, <u>Youngsok Kim</u>, and Jinho Lee<br>
+        <i>32nd IEEE International Symposium on High-Performance Computer Architecture (<b>HPCA</b>)</i>, Jan.&ndash;Feb. 2026 (to appear)<br>
+    	<span class="label label-sys">System SW</span>
+    	<span class="label label-pim">PIM</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <li>
+    	<b>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</b><br>
+    	Chaemin Lim, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+    	<i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025<br>
+    	<span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+    	<span class="label label-database">Database</span>
+      </li>
+      <br>
+      <li>
+    	<b><a target="_blank" href="https://doi.org/10.1145/3725843.3756069">LATPC: Accelerating GPU Address Translation Using Locality-Aware TLB Prefetching and MSHR Compression</a></b><br>
+    	Yeonan Ha, Jiho Park, Hanna Cha, Jiwon Lee, Joonsung Kim, Won Woo Ro, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+    	<i>58th IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Oct. 2025<br>
+    	<span class="label label-arch">Architecture</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3695053.3731068">GCStack&plus;GCScaler: Fast and Accurate GPU Performance Analyses Using Fine-Grained Stall Cycle Accounting and Interval Analysis</a></b> [<a target="_blank" href="https://github.com/yonsei-hpcp/gcstack_gcscaler">GitHub</a>]<br>
+        Hanna&nbsp;Cha, Sungchul&nbsp;Lee, Jounghoo&nbsp;Lee, Yeonan&nbsp;Ha, Joonsung&nbsp;Kim, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+        <i>52nd IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June 2025<br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-modeling">Modeling</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3698827">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></b> [<a target="_blank" href="https://github.com/yonsei-hpcp/spid-join">GitHub</a>]<br>
+        Suhyun&nbsp;Lee, Chaemin&nbsp;Lim, Jinwoo&nbsp;Choi, Heelim&nbsp;Choi, Chan&nbsp;Lee, Yongjun&nbsp;Park, Kwanghyun&nbsp;Park, Hanjun&nbsp;Kim, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+        <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025<br>
+    	<span class="label label-sys">System SW</span>
+    	<span class="label label-pim">PIM</span>
+    	<span class="label label-database">Database</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-37.pdf">PIM-CARE: A Compiler-Assisted Dynamic Resource Allocation Framework for Real-world DRAM PIM</a></b><br>
+        Inyong&nbsp;Hwang, Donghyeon&nbsp;Kim, Seokwon&nbsp;Kang, Taehyeong&nbsp;Park, Taehoon&nbsp;Kim, Jiwon&nbsp;Seo, Hanjun&nbsp;Kim, <u>Youngsok&nbsp;Kim</u>, and Yongjun&nbsp;Park<br>
+        <i>39th ACM International Conference on Supercomputing (<b>ICS</b>)</i>, June 2025<br>
+    	<span class="label label-sys">System SW</span>
+    	<span class="label label-pim">PIM</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/LCA.2024.3514917">IntervalSim++: Enhanced Interval Simulation for Unbalanced Processor Designs</a></b><br>
+        Haseung&nbsp;Bong, Nahyeon&nbsp;Kang, <u>Youngsok&nbsp;Kim</u>, Joonsung&nbsp;Kim, and Hanhwi&nbsp;Jang<br>
+        <i>IEEE Computer Architecture Letters (<b>CAL</b>)</i>, Dec. 2024<br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-modeling">Modeling</span>      
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/LCA.2024.3476909">GCStack: A GPU Cycle Accounting Mechanism for Providing Accurate Insight Into GPU Performance</a></b> [<a target="_blank" href="https://github.com/yonsei-hpcp/gcstack_gcscaler">GitHub</a>]<br>
+        Hanna&nbsp;Cha, Sungchul&nbsp;Lee, Yeonan&nbsp;Ha, Hanhwi&nbsp;Jang, Joonsung&nbsp;Kim<sup style="font-size:70%">*</sup>, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+        <i>IEEE Computer Architecture Letters (<b>CAL</b>)</i>, Oct. 2024<br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-modeling">Modeling</span>
+        <span class="label label-gpu">GPU</span>         
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3656019.3676892">GraNNDis: Fast Distributed Graph Neural Network Training Framework for Multi-Server Clusters</a></b><br>
+        Jaeyong&nbsp;Song, Hongsun&nbsp;Jang, Hunseong&nbsp;Lim, Jaewon&nbsp;Jung, <u>Youngsok&nbsp;Kim</u>, and Jinho&nbsp;Lee<br>
+        <i>33rd International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Oct. 2024<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-ai">AI</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3673038.3673056">CR2: Community-aware Compressed Regular Representation for Graph Processing on a GPU</a></b><br>
+        Shinnung Jeong, Sungjun Cho, Yongwoo Lee, Hyunjun Park, Seonyeong Heo, Gwangsun Kim, <u>Youngsok&nbsp;Kim</u>, and Hanjun Kim<br>
+        <i>53rd International Conference on Parallel Processing (<b>ICPP</b>)</i>, Aug. 2024<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/ISCA59077.2024.00027">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMM Devices</a></b><br>
+        Si Ung Noh<sup style="font-size:70%">1</sup>, Junguk Hong<sup style="font-size:70%">1</sup>, Chaemin Lim, Seongyeon Park, Jeehyun Kim, Hanjun Kim, <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup>, and Jinho Lee<sup style="font-size:70%">*</sup><br>
+        <i>51st IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June&ndash;July 2024<br>
+        <span class="label label-sys">System SW</span>
+        <span class="label label-pim">PIM</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3652032.3657571">Orchestrating Multiple Mixed Precision Models on a Shared Precision-Scalable NPU</a></b><br>
+        Kiung Jung, Seok Namkoong, Hongjun Um, Hyejun Kim, <u>Youngsok&nbsp;Kim</u>, and Yongjun Park<br>
+        <i>25th ACM International Conference on Languages, Compilers, and Tools for Embedded Systems (<b>LCTES</b>)</i>, June 2024<br>
+        <span class="label label-sys">System SW</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://www.msstconference.org/MSST-history/2024/Papers/msst24-7.3.pdf">Fully Harnessing the Performance Potential of DRAM-less Mobile Flash Storage</a></b><br>
+        Jaesun No, Gyusun Lee, <u>Youngsok&nbsp;Kim</u>, and Jinkyu Jeong<br>
+        <i>38th International Conference on Massive Storage Systems and Technology (<b>MSST</b>)</i>, June 2024<br>
+        <span class="label label-sys">System SW</span>
+        <span class="label label-mobile">Mobile</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/FCCM60383.2024.00027">MPC-Wrapper: Fully Harnessing the Potential of Samsung Aquabolt-XL HBM2-PIM on FPGAs</a></b><br>
+        Jinwoo Choi<sup style="font-size:70%">1</sup>, Yeonan Ha<sup style="font-size:70%">1</sup>, Hanna Cha, Seil Lee, Sungchul Lee, Jounghoo Lee, Shin-haeng Kang, Bongjun Kim, Hanwoong Jung, Hanjun Kim, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+        <i>32nd IEEE International Symposium on Field-Programmable Custom Computing Machines (<b>FCCM</b>)</i>, May 2024<br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-fpga">FPGA</span>
+        <span class="label label-pim">PIM</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3627535.3638474">AGAThA: Fast and Efficient GPU Acceleration of Guided Sequence Alignment for Long Read Mapping</a></b><br>
+        Seongyeon Park, Junguk Hong, Jaeyong Song, Hajin Kim, <u>Youngsok&nbsp;Kim</u>, and Jinho Lee<br>
+        <i>29th ACM Symposium on Principles and Practice of Parallel Programming (<b>PPoPP</b>)</i>, Mar. 2024<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/HPCA57654.2024.00034">Smart-Infinity: Fast Large Language Model Training using Near-Storage Processing on a Real System</a></b><br>
+        Hongsun Jang, Jaeyong Song, Jaewon Jung, Jaeyoung Park, <u>Youngsok&nbsp;Kim</u>, and Jinho Lee<br>
+        <i>30th IEEE International Symposium on High-Performance Computer Architecture (<b>HPCA</b>)</i>, Mar. 2024<br />
+    	<b><i>Received the HPCA 2024 Best Paper Award (Honorable Mention)!</i></b><br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-smartssd">SmartSSD</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <!--
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/ACCESS.2024.3359296">Gem5-AVX: Extension of the Gem5 Simulator to Support AVX Instruction Sets</a></b><br>
+        Seungmin Lee, <u>Youngsok&nbsp;Kim</u>, Dukyun Nam, and Jong Kim<br>
+        <i>IEEE Access</i>, Jan. 2024<br />
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-modeling">Modeling</span>
+      </li>
+      <br>
+      -->
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3613424.3614295">McCore: A Holistic Management of High-Performance Heterogeneous Multicores</a></b><br>
+        Jaewon Kwon, Yongju Lee, Hongju Kal, Minjae Kim, <u>Youngsok&nbsp;Kim</u>, and Won Woo Ro<br>
+        <i>56th IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Oct. 2023<br>
+        <span class="label label-arch">Architecture</span>
+      </li>
+      <br>
+      <li>
+    	<b><a target="_blank" href="https://doi.org/10.1109/PACT58117.2023.00018">Virtual PIM: Resource-aware Dynamic DPU Allocation and Workload Scheduling Framework for Multi-DPU PIM Architecture</a></b><br>
+    	Donghyeon Kim, Taehoon Kim, Inyong Hwang, Taehyeong Park, Hanjun Kim, <u>Youngsok&nbsp;Kim</u>, and Yongjun Park<br>
+    	<i>32nd International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Oct. 2023<br>
+    	<span class="label label-sys">System SW</span>
+    	<span class="label label-pim">PIM</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/TC.2023.3299030">Enabling Fine-Grained Spatial Multitasking on Systolic-Array NPUs Using Dataflow Mirroring</a></b><br>
+        Jinwoo Choi, Yeonan Ha, Jounghoo Lee, Sangsu Lee, Jinho Lee, Hanhwi Jang<sup style="font-size:70%">*</sup>, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+        <i>IEEE Transactions on Computers (<b>TC</b>)</i>, Aug. 2023<br />
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-ai">AI</span>
+        <span class="label label-modeling">Modeling</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/DAC56929.2023.10247839">Occamy: Memory-efficient GPU Compiler for DNN Inference</a></b><br>
+        Jaeho Lee, Shinnung Jeong, Seungbin Song, Kunwoo Kim, Heelim Choi, <u>Youngsok&nbsp;Kim</u>, and Hanjun Kim<br>
+        <i>60th ACM/IEEE Design Automation Conference (<b>DAC</b>)</i>, July 2023<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <li>
+    	<b><a target="_blank" href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b> [<a target="_blank" href="https://github.com/yonsei-hpcp/pid-join">GitHub</a>]<br>
+    	Chaemin Lim, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+    	<i>2023 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023<br>
+    	<span class="label label-sys">System SW</span>
+    	<span class="label label-pim">PIM</span>
+    	<span class="label label-database">Database</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.23919/DATE56975.2023.10137044">Pipe-BD: Pipelined Parallel Blockwise Distillation</a></b><br>
+        Hongsun Jang, Jaewon Jung, Jaeyong Song, Joonsang Yu, <u>Youngsok&nbsp;Kim</u>, and Jinho Lee<br>
+        <i>26th Design, Automation, and Test in Europe Conference (<b>DATE</b>)</i>, Apr. 2023<br>
+        <span class="label label-sys">System SW</span>
+        <span class="label label-ai">AI</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3575693.3575712">Optimus-CC: Efficient Large NLP Model Training with 3D Parallelism Aware Communication Compression</a></b><br>
+        Jaeyong Song<sup style="font-size:70%">1</sup>, Jinkyu Yim<sup style="font-size:70%">1</sup>, Jaewon Jung, Hongsun Jang, Hyung-Jin Kim, <u>Youngsok&nbsp;Kim</u>, and Jinho Lee<br>
+        <i>28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (<b>ASPLOS</b>)</i>, Mar. 2023<br>
+        <span class="label label-sys">System SW</span>
+        <span class="label label-ai">AI</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/HPCA56546.2023.10071102">SGCN: Exploiting Compressed-Sparse Features in Deep Graph Convolutional Network Accelerators</a></b><br>
+        Mingi Yoo<sup style="font-size:70%">1</sup>, Jaeyong Song<sup style="font-size:70%">1</sup>, Jounghoo Lee, Namhyung Kim, <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup>, and Jinho Lee<sup style="font-size:70%">*</sup><br>
+        <i>29th IEEE International Symposium on High-Performance Computer Architecture (<b>HPCA</b>)</i>, Feb.&ndash;Mar. 2023<br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3528535.3531513">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></b><br>
+        Jinwoo Choi<sup style="font-size:70%">1</sup>, Jaeyeon Kim<sup style="font-size:70%">1</sup>, Chaemin Lim<sup style="font-size:70%">1</sup>, Suhyun Lee, Jinho Lee, Dokyung Song, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+        <i>23rd ACM/IFIP International Middleware Conference (<b>Middleware</b>)</i>, Nov. 2022<br>
+        <span class="label label-sys">System SW</span>
+        <span class="label label-mobile">Mobile</span>
+        <span class="label label-ai">AI</span>
+        <span class="label label-sec">Security</span>
+      </li>
+      <br>
+      <li>
+    	<b><a target="_blank" href="https://doi.org/10.1145/3559009.3569686">Decoupling Schedule, Topology Layout, and Algorithm to Easily Enlarge the Tuning Space of GPU Graph Processing</a></b><br>
+    	Shinnung Jeong, Yongwoo Lee, Jaeho Lee, Heelim Choi, Seungbin Song, Jinho Lee, <u>Youngsok&nbsp;Kim</u>, and Hanjun Kim<br>
+    	<i>31st International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Oct. 2022<br>
+        <span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+    	<b><a target="_blank" href="https://doi.org/10.1145/3559009.3569693">Slice-and-Forge: Making Better Use of Caches for Graph Convolutional Network Accelerators</a></b><br>
+    	Mingi Yoo<sup style="font-size:70%">1</sup>, Jaeyong Song<sup style="font-size:70%">1</sup>, Hyeyoon Lee, Jounghoo Lee, Namhyung Kim, <u>Youngsok&nbsp;Kim</u>, and Jinho Lee<br>
+    	<i>31st International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Oct. 2022<br>
+    	<i><b>Received the PACT 2022 Best Paper Award!</b></i><br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-ai">AI</span><br>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3470496.3527384">GCoM: A Detailed GPU Core Model for Accurate Analytical Modeling of Modern GPUs</a></b> [<a target="_blank" href="https://github.com/yonsei-hpcp/gcom">GitHub</a>]<br>
+        Jounghoo Lee, Yeonan Ha, Suhyun Lee, Jinyoung Woo, Jinho Lee, Hanhwi Jang, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br>
+        <i>49th IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June 2022<br>
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-modeling">Modeling</span>
+        <span class="label label-gpu">GPU</span>         
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/IPDPS53621.2022.00076">SALoBa: Maximizing Data Locality and Workload Balance for Fast Sequence Alignment on GPUs</a></b><br />
+        Seongyeon Park, Hajin Kim, Tanveer Ahmad, Nauman Ahmed, Zaid Al-Ars, Peter Hofstee, <u>Youngsok&nbsp;Kim</u>, and Jinho Lee<br />
+        <i>36th IEEE International Parallel and Distributed Processing Symposium (<b>IPDPS</b>)</i>, May&ndash;June 2022<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/DAC18074.2021.9586312">Dataflow Mirroring: Architectural Support for Highly Efficient Fine-Grained Spatial Multitasking on Systolic-Array NPUs</a></b><br />
+        Jounghoo Lee<sup style="font-size:70%">1</sup>, Jinwoo Choi<sup style="font-size:70%">1</sup>, Jaeyeon Kim, Jinho Lee, and <u>Youngsok&nbsp;Kim</u><sup style="font-size:70%">*</sup><br />
+        <i>58th ACM/IEEE Design Automation Conference (<b>DAC</b>)</i>, Dec. 2021<br />
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/LCA.2021.3090954">Making a Better Use of Caches for GCN Accelerators with Feature Slicing and Automatic Tile Morphing</a></b><br />
+        Mingi Yoo<sup style="font-size:70%">1</sup>, Jaeyong Song<sup style="font-size:70%">1</sup>, Jounghoo Lee, Namhyung Kim, <u>Youngsok&nbsp;Kim</u>, and Jinho Lee<br />
+        <i>IEEE Computer Architecture Letters (<b>CAL</b>)</i>, June 2021<br />
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/CGO51591.2021.9370341">Thread-aware Area-efficient High-level Synthesis Compiler for Embedded Devices</a></b><br />
+        Changsu Kim, Shinnung Jeong, Sungjun Cho, Yongwoo Lee, William Song, <u>Youngsok&nbsp;Kim</u>, and Hanjun Kim<br />
+        <i>19th ACM/IEEE International Symposium on Code Generation and Optimization (<b>CGO</b>)</i>, Mar. 2021<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-fpga">FPGA</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/RTAS48715.2020.000-8">Real-Time Object Detection System with Multi-Path Neural Networks</a></b><br />
+        Seonyeong Heo, Sungjun Cho, <u>Youngsok&nbsp;Kim</u>, and Hanjun Kim<br />
+        <i>26th IEEE Real-Time and Embedded Technology and Applications Symposium (<b>RTAS</b>)</i>, Apr. 2020<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-gpu">GPU</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3352460.3358268">FlexLearn: Fast and Highly Efficient Brain Simulations Using Flexible On-Chip Learning</a></b><br />
+        Eunjin Baek<sup style="font-size:70%">1</sup>, Hunjun Lee<sup style="font-size:70%">1</sup>, <u>Youngsok&nbsp;Kim</u>, and Jangwoo Kim<br />
+        <i>52nd IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Oct. 2019<br />
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-neuro">Neuromorphic</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3302424.3303950">&mu;Layer: Low Latency On-Device Inference Using Cooperative Single-Layer Acceleration and Processor-Friendly Quantization</a></b><br />
+        <u>Youngsok&nbsp;Kim</u>, Joonsung Kim, Dongju Chae, Daehyun Kim, and Jangwoo Kim<br />
+        <i>14th ACM European Conference on Computer Systems (<b>EuroSys</b>)</i>, Mar. 2019<br />
+        <span class="label label-sys">System SW</span>
+        <span class="label label-mobile">Mobile</span>
+        <span class="label label-ai">AI</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/ISCA.2018.00032">Flexon: A Flexible Digital Neuron for Efficient Spiking Neural Network Simulations</a></b><br />
+        Dayeol Lee<sup style="font-size:70%">1</sup>, Gwangmu Lee<sup style="font-size:70%">1</sup>, Dongup Kwon, Sunghwa Lee, <u>Youngsok&nbsp;Kim</u>, and Jangwoo Kim<br />
+        <i>45th ACM/IEEE International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June 2018<br />
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-neuro">Neuromorphic</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/ISCA.2018.00048">DCS-ctrl: A Fast and Flexible Device-Control Mechanism for Device-Centric Server Architecture</a></b><br />
+        Dongup Kwon<sup style="font-size:70%">1</sup>, Jaehyung Ahn<sup style="font-size:70%">1</sup>, Dongju Chae, Mohammadamin Ajdari, Jaewon Lee, Suheon Bae, <u>Youngsok&nbsp;Kim</u>, and Jangwoo Kim<br />
+        <i>45th ACM/IEEE International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June 2018<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-fpga">FPGA</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3173162.3173177">Google Workloads for Consumer Devices: Mitigating Data Movement Bottlenecks</a></b><br />
+        Amirali Boroumand, Saugata Ghose, <u>Youngsok&nbsp;Kim</u>, Rachata Ausavarungnirun, Eric Shiu, Rahul Thakur, Daehyun Kim, Aki Kuusela, Allan Knies, Parthasarathy Ranganathan, and Onur Mutlu<br />
+        <i>23rd ACM International Conference on Architectural Support for Programming Languages and Operating Systems (<b>ASPLOS</b>)</i>, Mar. 2018<br />
+        <span class="label label-arch">Architecture</span>
+        <span class="label label-pim">PIM</span>
+        <span class="label label-mobile">Mobile</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/3123939.3123968">GPUpd: A Fast and Scalable Multi-GPU Architecture Using Cooperative Projection and Distribution</a></b><br />
+        <u>Youngsok&nbsp;Kim</u>, Jae-Eon Jo, Hanhwi Jang, Minsoo Rhu, Hanjun Kim, and Jangwoo Kim<br />
+        <i>50th IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Oct. 2017<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-gpu">GPU</span>
+      </li>
+      <br>
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/CCGrid.2016.22">CloudSwap: A Cloud-Assisted Swap Mechanism for Mobile Devices</a></b><br />
+        Dongju Chae, Joonsung Kim, <u>Youngsok&nbsp;Kim</u>, Jangwoo Kim, Kyung-Ah Chang, Sang-Bum Suh, and Hyogun Lee<br />
+        <i>16th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (<b>CCGrid</b>)</i>, May 2016<br />
+        <span class="label label-sys">System SW</span> <span class="label label-mobile">Mobile</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/HPCA.2016.7446068">Efficient Footprint Caching for Tagless DRAM Caches</a></b><br />
+        Hakbeom Jang<sup style="font-size:70%">1</sup>, Yongjun Lee<sup style="font-size:70%">1</sup>, Jongwon Kim, <u>Youngsok&nbsp;Kim</u>, Jangwoo Kim, Jinkyu Jeong, and Jae W. Lee<br />
+        <i>22nd IEEE International Symposium on High Performance Computer Architecture (<b>HPCA</b>)</i>, Mar. 2016<br />
+        <span class="label label-arch">Architecture</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1145/2830772.2830794">DCS: A Fast and Scalable Device-Centric Server Architecture</a></b><br />
+        Jaehyung Ahn<sup style="font-size:70%">1</sup>, Dongup Kwon<sup style="font-size:70%">1</sup>, <u>Youngsok&nbsp;Kim</u>, Mohammadamin Ajdari, Jaewon Lee, and Jangwoo Kim<br />
+        <i>48th IEEE/ACM International Symposium on Microarchitecture (<b>MICRO</b>)</i>, Dec. 2015<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-fpga">FPGA</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/SP.2014.9">Stealing Webpages Rendered on Your Browser by Exploiting GPU Vulnerabilities</a></b><br />
+        Sangho Lee, <u>Youngsok&nbsp;Kim</u>, Jangwoo Kim, and Jong Kim<br />
+        <i>35th IEEE Symposium on Security and Privacy (<b>S&amp;P</b>)</i>, May 2014<br />
+        <span class="label label-sec">Security</span> <span class="label label-gpu">GPU</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/HPCA.2014.6835963">GPUdmm: A High-Performance and Memory-Oblivious GPU Architecture Using Dynamic Memory Management</a></b><br />
+        <u>Youngsok&nbsp;Kim</u>, Jaewon Lee, Jae-Eon Jo, and Jangwoo Kim<br />
+        <i>20th IEEE International Symposium on High Performance Computer Architecture (<b>HPCA</b>)</i>, Feb. 2014<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-gpu">GPU</span>
+      </li>
+      <br />
+      <li>
+        <b><a target="_blank" href="https://doi.org/10.1109/L-CA.2013.19">ScaleGPU: GPU Architecture for Memory-Unaware GPU Programming</a></b><br />
+        <u>Youngsok&nbsp;Kim</u>, Jaewon Lee, Donggyu Kim, and Jangwoo Kim<br />
+        <i>IEEE Computer Architecture Letters (<b>CAL</b>)</i>, July 2013<br />
+        <span class="label label-arch">Architecture</span> <span class="label label-gpu">GPU</span>
+      </li>
+    </ol>
+    <hr>
+    <h2>Awards</h2>
+    <ul>
+      <li><b>Best Paper Award (Honorable Mention)</b> @ HPCA 2024</b></li>
+      <li><b>Best Paper Award</b> @ PACT 2022</b></li>
+      <br>
+      <li><b>2024 Yonsei Outstanding Teaching Award (우수강의교수상)</b></li>
+      <li><b>2023 Yonsei Outstanding Teaching Award (우수강의교수상)</b></li>
+      <li><b>2022 Yonsei Outstanding Teaching Award (우수강의교수상)</b></li>
+      <br>
+      <li><b>Global Ph.D. Fellowship (글로벌 박사 펠로우십)</b>, NRF, 2012&mdash;2017</li>
+      <li><b>Presidential Science Scholarship (대통령 과학 장학금)</b>, KOSEF, 2008&mdash;2012</li>
+      <br>
+      <li>6th Place (2010) @ <b>ACM ICPC &mdash; Daejeon Site</b></li>
+      <li>3rd Place @ <b>DEF CON 17 Capture the Flag (CTF)</b>, 2009</li>
+      <li>Silver Prize (2006) and Bronze Prize (2007) @ <b>Korea Olympiad in Informatics (한국정보올림피아드)</b></li>
+    </ul>
+  </body>
+</html>
+
